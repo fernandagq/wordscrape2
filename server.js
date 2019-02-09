@@ -22,7 +22,7 @@ app.use(express.static("public"));
 
 var MONGODB_URI = process.env.MONGODB_URI || "mongodb://localhost/mongoHeadlines";
 
-mongoose.connect(MONGODB_URI);
+mongoose.connect("mongodb://heroku_mtfstjxg:v43nnlse34k0r6flk5tc2s6bi2@ds227185.mlab.com:27185/heroku_mtfstjxg");
 
 
 app.get("/scrape", function (req, res) {
